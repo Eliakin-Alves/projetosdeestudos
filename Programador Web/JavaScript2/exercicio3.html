@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-b">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>200</li>
+        <li>800</li>
+        <li>100</li>
+        <li>800</li>
+        <li>400</li>
+        <li>800</li>
+        <li>200</li>
+        <li>350</li>
+    </ul>
+    <div id="soma"></div>
+    <script>
+        lista = document.getElementsByTagName('li');
+        divSoma = document.getElementById('soma');
+        result = 0;
+        for(x=0;x<lista.length;x++) {
+            result += parseFloat(lista[x].innerHTML);
+            item = parseFloat(lista[x].innerHTML);
+            if(item<500) {
+                lista[x].style.color = "red";
+            }
+        }
+        //alert(result);
+        divSoma.innerHTML = result;
+    </script>
+
+</body>
+</html>

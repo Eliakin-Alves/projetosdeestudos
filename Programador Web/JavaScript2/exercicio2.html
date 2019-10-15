@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Matrizes</title>
+</head>
+<body>
+    <script>
+        notas = new Array(50,70,90,30,65);
+        for(x=0;x<notas.length; x++) {
+            document.write("<p>" + notas[x] + "</p>");
+            if(notas[x]>50) {
+                document.write("Aprovado");
+            }
+            else {
+                document.write("Reprovado");
+            }
+        }
+        for (n of notas) {
+            document.write("<p>" + n + "</p>");
+            if(notas[x]>50) {
+                document.write("Aprovado");
+            }
+            else {
+                document.write("Reprovado");
+            }
+        }
+    </script>
+    <div id="notas"></div>
+        
+        
+        
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

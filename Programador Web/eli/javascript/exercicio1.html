@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        //Crie um programa que leia o valor do produto
+        //e a quantidade. calcule o total. (prompt)
+        function calcular() {
+        valor = document.getElementById("produto").value;
+        quantidade = document.getElementById("quantidade").value;
+        //realizar o processamento
+        total = (parseFloat(valor)*parseFloat(quantidade));
+        //exibir a saida
+        document.getElementById("valor").innerHTML = "valor: " + total;
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <label for="">Produto</label>
+        <input type="text" name="produto" id="produto" size="10">
+    </div>
+    <div>
+        <label for="">quantidade</label>
+        <input type="text" name="quantidade" id="quantidade" size="10">
+    </div>
+    <div>
+        <label></label>
+        <input type="submit" value="Calcular" onclick="calcular()">
+    </div>
+    <p id="valor"></p>
+</body>
+</html>

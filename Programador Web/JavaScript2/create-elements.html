@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="criarElem()">Novo Parágrafo</button>
+    <div>Total: <span id="soma"></span></div>
+    <script>
+        function criarElem() {
+            newP = document.createElement("p");
+            newP.innerHTML = prompt("Digite o valor");
+            document.body.appendChild(newP);
+            somarVal();
+        }
+        function somarVal() {
+            lista = document.getElementsByTagName('p');
+            divSoma = document.getElementById('soma');
+            result = 0;
+            for(x=0;x<lista.length;x++) {
+                result += parseFloat(lista[x].innerHTML);
+            }
+            divSoma.innerHTML = result;
+        }
+    </script>
+</body>
+</html>

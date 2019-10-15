@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document Object Model</title>
+  </head>
+  <body>
+	<p>20</p>
+    <p>60</p>
+    <p>90</p>
+    <div id="soma"></div>
+
+    <script>
+        lista = document.getElementsByTagName('p');
+        divSoma = document.getElementById('soma');
+        result = 0;
+        for(x=0;x<lista.length;x++) {
+            result += parseFloat(lista[x].innerHTML)
+        }
+        //alert(result);
+        divSoma.innerHTML = result;
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

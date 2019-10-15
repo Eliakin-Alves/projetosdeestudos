@@ -1,0 +1,91 @@
+body {
+    margin: 0px;
+}
+.container {
+    background-image: url("../img/sunset.jpg");
+    background-size: 100% auto; /* tamanho da pagina */
+    height: 1000px; /* aumenta a pagina */
+    background-repeat: no-repeat; /* para nao repetir a imagem */
+    padding: 20px;
+}
+header {
+    height: 50px;
+}
+.logo{
+    float: left;
+    margin-right: 50px;
+}
+.menu{
+    float: left;
+}
+.menu li {
+    display: inline-block;
+}
+.menu a {
+    color: white;
+    margin-left: 40px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.login {
+    float: right;
+}
+.btn-login {
+    color: white;
+    font-weight: bold;
+    margin-right: 20px;
+}
+.btn-reg {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 5px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.btn-reg:hover {
+    background-color: #444;
+}
+.info-home {
+    margin-top: 200px;
+    text-align: center;
+}
+.info-home h1 {
+    font-size: 50px;
+    color: #fff;
+}
+.info-home h3 {
+    font-size: 30px;
+    font-weight: 100;
+    color: #fff;
+}
+.sectors {
+    text-align: center;
+}
+.sectors h2 {
+    font-size: 40px;
+}
+.sectors p {
+    font-size: 14px;
+    color: #555;
+}
+.home-icon {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.home-icon div{
+    display: inline-block;
+    width: 130px;
+}
+.jobs {
+    height: 200px;
+}
+footer {
+    height: 100px;
+    background-color: #ccc;
+}

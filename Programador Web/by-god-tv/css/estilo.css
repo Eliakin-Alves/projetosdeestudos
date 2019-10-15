@@ -1,0 +1,100 @@
+.container {
+    background-image: url("../img/sunset.jpg");
+    background-size: 100% auto; /* tamanho da pagina */
+    height: 1000px; /* aumenta a pagina */
+    background-repeat: no-repeat; /* para nao repetir a imagem */
+    padding: 20px;
+}
+
+
+.login {
+    float: right;
+}
+.btn-login {
+    color: white;
+    font-weight: bold;
+    margin-right: 20px;
+}
+.btn-reg {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 5px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.btn-reg:hover {
+    background-color: #444;
+}
+.info-home {
+    margin-top: 50px;
+    text-align: center;
+}
+.info-home h1 {
+    font-size: 50px;
+    color: #fff;
+}
+.info-home h3 {
+    font-size: 30px;
+    font-weight: 100;
+    color: #303030;
+    margin-bottom: 50px;
+}
+
+.info-home button {
+    margin: auto !important;
+    width: 100px;
+    margin-top: 40px;
+}
+#card {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+.cards h3 {
+    margin-top: 40px;
+    margin-left: 20px;
+}
+#btn {
+    height: 40px;
+    width: 260px;
+    margin-top: 5px !important;
+}
+.busca{
+    margin: auto;
+    width: 600px;
+}
+
+.navbar{
+    border-bottom: 1px solid #999;
+}
+.logo {
+    background-color: white;
+    border-radius: 10px;
+    height: 60px;
+    width: 70px;
+}
+.nav-link {
+    color: white !important;
+}
+.card-title {
+    text-align: center !important;
+}
+#btn{
+    text-align: center !important;
+}
+.block {
+    display: block;
+}
+.em-linha {
+    display: inline-block;
+    margin: 30px;
+}
+.center {
+    text-align: center;
+}
+.margin {
+    margin-top: -15px;
+}

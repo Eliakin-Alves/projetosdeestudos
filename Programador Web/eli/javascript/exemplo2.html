@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exemplo 2</title>
+    <script>
+        // a função pode ser executada no momento que eu quiser
+        //como ao clicar em um botão e diversas vezes
+        function calcularMedia() {
+        n1 = document.getElementById("nota1").value;
+        n2 = document.getElementById("nota2").value;
+        n3 = document.getElementById("nota3").value;
+        //processamento
+        media = (parseFloat(n1)+parseFloat(n2)+parseFloat(n3))/3;
+        //saida
+        document.getElementById("resultado").innerHTML = "Resultado: " + media;
+    }
+    </script>
+</head>
+<body>
+    <div>
+        <label for="">Nota 1</label>
+        <input type="text" name="nota1" id="nota1" size="10">
+    </div>
+    <div>
+        <label for="">Nota 2</label>
+        <input type="text" name="nota2" id="nota2" size="10">
+    </div>
+    <div>
+        <label for="">Nota 3</label>
+        <input type="text" name="nota3" id="nota3" size="10">
+    </div>
+    <div>
+        <label></label>
+        <input type="submit" value="Calcular" onclick="calcularMedia()">
+    </div>
+    <p id="resultado"></p>
+</body>
+</html>

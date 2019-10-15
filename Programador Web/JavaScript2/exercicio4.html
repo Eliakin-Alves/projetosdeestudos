@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="convidar()">Novo Candidato</button>
+    <div>Total: <span id="soma"></span></div>
+    <div id="total"></div>
+    <div id="convidados" style="border: 1px solid #00f; width: 500px"></div>
+    <script>
+        function convidar() {
+            newP = document.createElement("p");
+            newP.innerHTML = prompt("Digite o valor");
+            document.getElementById('convidados').appendChild(newP);
+            lista = document.getElementsByTagName('p');
+            lista = document.getElementById('total').innerHTML = lista.length;
+        }
+    </script>
+</body>
+</html>
